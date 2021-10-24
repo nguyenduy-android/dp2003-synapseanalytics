@@ -1,43 +1,81 @@
 {
-	"name": "Notebook 1",
+	"name": "nb_loadparquet",
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "ilearnsparkpool",
+			"type": "BigDataPoolReference"
+		},
 		"sessionProperties": {
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
 			"numExecutors": 2,
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
-				"spark.dynamicAllocation.maxExecutors": "2"
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "890aa27c-3d64-4d33-845b-8b7aa09ee2d4"
 			}
 		},
 		"metadata": {
 			"saveOutput": true,
-			"synapse_widget": {
-				"version": "0.1"
-			},
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
-			}
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/93eef158-144f-4be5-99f4-1b2026ee76fd/resourceGroups/ilearndata/providers/Microsoft.Synapse/workspaces/ilearnsynapse/bigDataPools/ilearnsparkpool",
+				"name": "ilearnsparkpool",
+				"type": "Spark",
+				"endpoint": "https://ilearnsynapse.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/ilearnsparkpool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"automaticScaleJobs": false
+			},
+			"sessionKeepAliveTimeout": 30
 		},
 		"cells": [
 			{
 				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
 				"source": [
 					"%%pyspark\r\n",
 					"df = spark.read.load('abfss://databrickparquets@ilearndlstorgen2.dfs.core.windows.net/dbo.DimCustomer.parquet', format='parquet')\r\n",
 					"display(df.limit(10))"
 				],
-				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
+				],
 				"execution_count": null
 			}
 		]
