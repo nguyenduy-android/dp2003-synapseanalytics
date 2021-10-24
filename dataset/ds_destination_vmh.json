@@ -1,5 +1,5 @@
 {
-	"name": "DestinationDataset_vmh",
+	"name": "ds_destination_vmh",
 	"properties": {
 		"parameters": {
 			"cw_table": {
@@ -15,10 +15,6 @@
 				"value": "@dataset().cw_table",
 				"type": "Expression"
 			}
-		},
-		"sqlPool": {
-			"referenceName": "ilearndedicatedsqlpool",
-			"type": "SqlPoolReference"
 		}
 	},
 	"type": "Microsoft.Synapse/workspaces/datasets"
