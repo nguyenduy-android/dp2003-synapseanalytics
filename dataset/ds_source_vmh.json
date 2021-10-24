@@ -1,5 +1,5 @@
 {
-	"name": "SourceDataset_vmh",
+	"name": "ds_source_vmh",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",

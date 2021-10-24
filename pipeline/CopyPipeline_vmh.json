@@ -58,7 +58,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SourceDataset_vmh",
+									"referenceName": "ds_source_vmh",
 									"type": "DatasetReference",
 									"parameters": {
 										"cw_table": "@item().source.table"
@@ -67,7 +67,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DestinationDataset_vmh",
+									"referenceName": "ds_destination_vmh",
 									"type": "DatasetReference",
 									"parameters": {
 										"cw_table": "@item().destination.table"
