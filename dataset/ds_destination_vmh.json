@@ -15,6 +15,10 @@
 				"value": "@dataset().cw_table",
 				"type": "Expression"
 			}
+		},
+		"sqlPool": {
+			"referenceName": "ilearnsqlpool",
+			"type": "SqlPoolReference"
 		}
 	},
 	"type": "Microsoft.Synapse/workspaces/datasets"
