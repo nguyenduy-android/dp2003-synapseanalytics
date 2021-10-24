@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "4f0ae83f-d8eb-4b88-85df-0c7397b59a3b"
+				"spark.autotune.trackingId": "844f7bc6-4fe4-469e-ab5a-ae467032ba63"
 			}
 		},
 		"metadata": {
@@ -61,6 +61,29 @@
 					"df.write.mode(\"overwrite\").saveAsTable(\"default.Person\")"
 				],
 				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\r\n",
+					"select * from default.person limit 100"
+				],
+				"execution_count": 2
 			}
 		]
 	}
