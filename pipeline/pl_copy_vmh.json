@@ -1,5 +1,5 @@
 {
-	"name": "CopyPipeline_vmh",
+	"name": "pl_copy_vmh",
 	"properties": {
 		"description": "copy data from azure sql database to sql pool (DW) of my Synapse",
 		"activities": [
