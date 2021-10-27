@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 6",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [BusinessEntityID]\n,[PersonType]\n,[NameStyle]\n,[Title]\n,[FirstName]\n,[MiddleName]\n,[LastName]\n,[Suffix]\n,[EmailPromotion]\n,[AdditionalContactInfo]\n,[Demographics]\n,[rowguid]\n,[ModifiedDate]\n FROM [default].[dbo].[person]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "default",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

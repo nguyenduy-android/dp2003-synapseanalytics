@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 5",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [CustomerKey]\n,[GeographyKey]\n,[CustomerAlternateKey]\n,[Title]\n,[FirstName]\n,[MiddleName]\n,[LastName]\n,[NameStyle]\n,[BirthDate]\n,[MaritalStatus]\n,[Suffix]\n,[Gender]\n,[EmailAddress]\n,[YearlyIncome]\n,[TotalChildren]\n,[NumberChildrenAtHome]\n,[EnglishEducation]\n,[SpanishEducation]\n,[FrenchEducation]\n,[EnglishOccupation]\n,[SpanishOccupation]\n,[FrenchOccupation]\n,[HouseOwnerFlag]\n,[NumberCarsOwned]\n,[AddressLine1]\n,[AddressLine2]\n,[Phone]\n,[DateFirstPurchase]\n,[CommuteDistance]\n FROM [default].[dbo].[dimcustomer]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "default",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
