@@ -15,7 +15,22 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Repos/nguyenduy.android@gmail.com/dp2003-databrick/adftutorial/copy_dataparquet_2_azuresqldb"
+					"notebookPath": "/Repos/nguyenduy.android@gmail.com/dp2003-databrick/adftutorial/copy_dataparquet_2_azuresqldb",
+					"baseParameters": {
+						"dbSchema": {
+							"value": "@pipeline().parameters.dbSchema",
+							"type": "Expression"
+						},
+						"dbTable": {
+							"value": "@pipeline().parameters.dbTable",
+							"type": "Expression"
+						}
+					},
+					"libraries": [
+						{
+							"jar": ""
+						}
+					]
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -23,6 +38,16 @@
 				}
 			}
 		],
+		"parameters": {
+			"dbTable": {
+				"type": "string",
+				"defaultValue": "Person"
+			},
+			"dbSchema": {
+				"type": "string",
+				"defaultValue": "dbo"
+			}
+		},
 		"annotations": []
 	}
 }
