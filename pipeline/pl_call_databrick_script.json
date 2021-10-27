@@ -25,12 +25,7 @@
 							"value": "@pipeline().parameters.dbTable",
 							"type": "Expression"
 						}
-					},
-					"libraries": [
-						{
-							"jar": ""
-						}
-					]
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
