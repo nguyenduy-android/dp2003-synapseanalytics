@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 7",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL TABLE stage.UnitMeasure (\n    UnitMeasureCode varchar(50),\n    Name nvarchar(100),\n    ModifiedDate datetime\n)\nWITH (\n        LOCATION='/FTH/UnitMeasure.tbl',\n        DATA_SOURCE = AzureBlobStorage,\n        FILE_FORMAT = CSVFileFormat,   \n\t\tREJECT_TYPE = VALUE,   \n\t\tREJECT_VALUE = 0\n    )\n;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "ilearnsqlpool",
+				"poolName": "ilearnsqlpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
