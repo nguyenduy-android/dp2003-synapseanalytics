@@ -1,5 +1,5 @@
 {
-	"name": "SQL script 10",
+	"name": "query_sqldb_restorepoint",
 	"properties": {
 		"content": {
 			"query": "select   top 1 *\nfrom     sys.pdw_loader_backup_runs\norder by run_id desc\n;",
