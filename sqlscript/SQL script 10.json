@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 10",
+	"properties": {
+		"content": {
+			"query": "select   top 1 *\nfrom     sys.pdw_loader_backup_runs\norder by run_id desc\n;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "ilearnsqlpool",
+				"poolName": "ilearnsqlpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
